@@ -1,0 +1,42 @@
+.section-intro {
+  color: var(--muted);
+  max-width: 760px;
+  margin-bottom: 32px;
+}
+
+.volunteer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Card */
+.volunteer-card {
+  background: var(--card);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 26px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.volunteer-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.35);
+}
+
+.volunteer-card h3 {
+  margin: 0 0 6px;
+}
+
+.volunteer-role {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.volunteer-description {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--muted);
+}

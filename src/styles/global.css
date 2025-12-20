@@ -1,0 +1,28 @@
+:root {
+  --bg: #0b0f19;
+  --card: #121a2b;
+  --text: #e8eefc;
+  --muted: #a7b2cc;
+  --accent: #7aa2ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

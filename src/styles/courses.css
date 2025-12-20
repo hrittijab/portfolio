@@ -1,0 +1,35 @@
+.section-intro {
+  color: var(--muted);
+  max-width: 750px;
+  margin-bottom: 32px;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+}
+
+.course-category {
+  background: var(--card);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 22px;
+}
+
+.course-category h3 {
+  margin-bottom: 12px;
+  font-size: 17px;
+}
+
+.course-category ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.course-category li {
+  font-size: 14px;
+  color: #d6dcff;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}

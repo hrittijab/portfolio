@@ -1,0 +1,91 @@
+.section-intro {
+  color: var(--muted);
+  max-width: 760px;
+  margin-bottom: 32px;
+}
+
+.work-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* Card */
+.work-card {
+  background: var(--card);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 28px;
+}
+
+/* Header */
+.work-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.work-header h3 {
+  margin: 0;
+}
+
+.work-header span {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* Meta */
+.work-meta {
+  margin-top: 8px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* Points */
+.work-points {
+  margin-top: 16px;
+  padding-left: 18px;
+}
+
+.work-points li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+/* Tech */
+.work-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.work-tech span {
+  background: rgba(122, 162, 255, 0.15);
+  color: var(--accent);
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Links */
+.work-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.work-link {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--accent);
+}
+
+.work-link.secondary {
+  color: #9fb4ff;
+}
+
+.work-link:hover {
+  text-decoration: underline;
+}
