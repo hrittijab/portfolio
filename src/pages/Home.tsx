@@ -1,5 +1,6 @@
 import "../styles/home.css";
 import profileImg from "../assets/profile.jpg";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -10,7 +11,6 @@ export default function Home() {
           Hi, I’m <span className="accent">Hrittija</span> 👋
         </h1>
 
-        {/* Headline (IMPORTANT for CSS flex) */}
         <p className="hero-headline">
           I build reliable full-stack applications with clean APIs and modern
           interfaces.
@@ -23,14 +23,18 @@ export default function Home() {
         <p className="hero-location">Edmonton, Alberta, Canada</p>
 
         <div className="hero-actions">
-          <a href="/projects" className="primary-btn">
+          {/* Internal navigation → Link */}
+          <Link to="/projects" className="primary-btn">
             View Projects
-          </a>
-          <a href="/contact" className="secondary-btn">
+          </Link>
+
+          <Link to="/contact" className="secondary-btn">
             Contact Me
-          </a>
+          </Link>
+
+          {/* Resume download → BASE_URL */}
           <a
-            href="/Hrittija_Resume.pdf"
+            href={`${import.meta.env.BASE_URL}Hrittija_Resume.pdf`}
             download
             className="secondary-btn resume-btn"
           >
@@ -38,7 +42,6 @@ export default function Home() {
           </a>
         </div>
 
-        {/* CSS flex badges */}
         <div className="hero-badges">
           <span>CSS Architecture</span>
           <span>Responsive Design</span>
