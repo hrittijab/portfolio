@@ -12,7 +12,7 @@ import Volunteering from "./pages/Volunteering";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/portfolio">
       <Routes>
         {/* Layout route */}
         <Route element={<Layout />}>
