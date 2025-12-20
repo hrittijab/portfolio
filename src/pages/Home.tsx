@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 export default function Home() {
   return (
     <section className="home-hero">
-      {/* LEFT: Text content */}
       <div className="hero-content">
         <h1>
           Hi, I’m <span className="accent">Hrittija</span> 👋
@@ -23,16 +22,16 @@ export default function Home() {
         <p className="hero-location">Edmonton, Alberta, Canada</p>
 
         <div className="hero-actions">
-          {/* Internal navigation → Link */}
-          <Link to="/projects" className="primary-btn">
+          {/* RELATIVE LINKS */}
+          <Link to="projects" className="primary-btn">
             View Projects
           </Link>
 
-          <Link to="/contact" className="secondary-btn">
+          <Link to="contact" className="secondary-btn">
             Contact Me
           </Link>
 
-          {/* Resume download → BASE_URL */}
+          {/* Resume download */}
           <a
             href={`${import.meta.env.BASE_URL}Hrittija_Resume.pdf`}
             download
@@ -49,7 +48,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* RIGHT: Image */}
       <div className="hero-image-container">
         <div className="image-glow" />
         <img
