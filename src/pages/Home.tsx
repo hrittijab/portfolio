@@ -22,16 +22,16 @@ export default function Home() {
         <p className="hero-location">Edmonton, Alberta, Canada</p>
 
         <div className="hero-actions">
-          {/* RELATIVE LINKS */}
-          <Link to="projects" className="primary-btn">
+          {/* Absolute routes */}
+          <Link to="/projects" className="primary-btn">
             View Projects
           </Link>
 
-          <Link to="contact" className="secondary-btn">
+          <Link to="/contact" className="secondary-btn">
             Contact Me
           </Link>
 
-          {/* Resume download */}
+          {/* GitHub Pages–safe resume download */}
           <a
             href={`${import.meta.env.BASE_URL}Hrittija_Resume.pdf`}
             download
