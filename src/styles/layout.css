@@ -1,0 +1,32 @@
+.menu-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+
+  background: rgba(122,162,255,0.12);
+  border: 1px solid rgba(122,162,255,0.25);
+  color: var(--text);
+
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.15s ease;
+  z-index: 150;
+}
+
+.menu-btn:hover {
+  background: rgba(122,162,255,0.25);
+  transform: translateY(-1px);
+}
+.main-content {
+  padding-top: 100px; 
+  min-height: 100vh;
+}
+
+.content-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px;
+}

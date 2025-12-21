@@ -8,9 +8,13 @@ import {
   Code,
   HeartHandshake,
 } from "lucide-react";
-
 import { NavLink } from "react-router-dom";
 import "../styles/sidebar.css";
+
+type SidebarProps = {
+  open: boolean;
+  onClose: () => void;
+};
 
 const navItems = [
   { label: "Home", to: "/", icon: Home },
@@ -23,13 +27,11 @@ const navItems = [
   { label: "Contact", to: "/contact", icon: Mail },
 ];
 
-export default function Sidebar() {
+export default function Sidebar({ open, onClose }: SidebarProps) {
   return (
-    <aside className="sidebar">
+    <aside className={`sidebar ${open ? "open" : ""}`}>
       {/* Clickable Logo */}
-      <NavLink to="/" className="sidebar-logo">
-        HB
-      </NavLink>
+    
 
       {/* Navigation */}
       <nav className="sidebar-nav">
@@ -37,6 +39,7 @@ export default function Sidebar() {
           <NavLink
             key={to}
             to={to}
+            onClick={onClose}   
             className={({ isActive }) =>
               `nav-item ${isActive ? "active" : ""}`
             }
