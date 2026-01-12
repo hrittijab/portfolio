@@ -19,6 +19,7 @@ export default function Skills() {
             <span>C</span>
             <span>C++</span>
             <span>JavaScript</span>
+            <span>TypeScript</span>
           </div>
         </div>
 
@@ -41,11 +42,23 @@ export default function Skills() {
           <h3>Backend & APIs</h3>
           <div className="skill-tags">
             <span>Spring Boot</span>
+            <span>FastAPI</span>
             <span>Django</span>
             <span>Django REST Framework</span>
             <span>REST APIs</span>
             <span>JWT</span>
             <span>BCrypt</span>
+            <span>LLM Integration</span>
+          </div>
+        </div>
+        <div className="skill-category">
+          <h3>AI & NLP</h3>
+          <div className="skill-tags">
+            <span>LLMs</span>
+            <span>Resume Parsing</span>
+            <span>ATS Scoring</span>
+            <span>Text Similarity</span>
+            <span>NLP Fundamentals</span>
           </div>
         </div>
 

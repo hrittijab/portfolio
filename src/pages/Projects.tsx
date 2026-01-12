@@ -5,6 +5,7 @@ import skilllinkImg from "../assets/skilllink.jpeg";
 import socialImg from "../assets/socialdistribution.jpeg";
 import taskmasterImg from "../assets/taskmaster.jpeg";
 import eventImg from "../assets/event.png";
+import careercraftImg from "../assets/careercraft.png";
 
 export default function Projects() {
   return (
@@ -16,6 +17,26 @@ export default function Projects() {
       </p>
 
       <div className="projects-grid">
+        <ProjectCard
+          title="CareerCraft — AI-Powered Career Assistant"
+          image={careercraftImg}
+          summary="A full-stack web application that helps job seekers optimize resumes, analyze job fit, and prepare for interviews using AI-driven insights."
+          highlights={[
+            "Designed modular FastAPI backend separating deterministic ML logic from LLM-powered features",
+            "Integrated HuggingFace-hosted LLMs for resume bullet rewriting, cover letter generation, and interview prep",
+            "Built ATS scoring, skill gap analysis, and job-fit similarity using TF-IDF and sentence embeddings",
+          ]}
+          tech={[
+            "Angular",
+            "TypeScript",
+            "FastAPI",
+            "Python",
+            "HuggingFace",
+            "Sentence Transformers",
+            "REST APIs",
+          ]}
+          github="https://github.com/hrittijab/CareerCraft"
+        />
         <ProjectCard
           title="SkillLink — Mobile Skill-Exchange Platform"
           image={skilllinkImg}
