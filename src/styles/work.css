@@ -89,3 +89,17 @@
 .work-link:hover {
   text-decoration: underline;
 }
+.work-image {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.work-image img {
+  width: 100%;
+  max-width: 420px; 
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}

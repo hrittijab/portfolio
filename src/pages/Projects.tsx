@@ -77,7 +77,7 @@ export default function Projects() {
             "Heroku",
             "PyTest",
           ]}
-          github="https://github.com/yourusername/socialdistribution"
+          github="https://github.com/hrittijab/socialdistribution"
         />
 
         <ProjectCard

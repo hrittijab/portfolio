@@ -1,4 +1,5 @@
 import "../styles/work.css";
+import sellsmart from "../assets/sellsmart.jpeg";
 
 export default function Work() {
   return (
@@ -18,7 +19,7 @@ export default function Work() {
           </div>
 
           <p className="work-meta">
-            June 2025 – August 2025 · Full-Stack Developer (e-Government ERP)
+            June 2025 – August 2025 · Backend / Full-Stack Developer (e-Government ERP)
           </p>
 
           <ul className="work-points">
@@ -27,12 +28,12 @@ export default function Work() {
               e-Government ERP (GRP) system used by public-sector organizations.
             </li>
             <li>
-              Implemented microservices-based architecture using Spring Boot and
-              Spring Cloud (Eureka, Config Server).
+              Worked within a microservices-based architecture using Spring Boot
+              and Spring Cloud (Eureka, Config Server).
             </li>
             <li>
-              Integrated REST APIs with PostgreSQL and optimized database
-              queries to improve response times and system performance.
+              Integrated REST APIs with PostgreSQL and optimized database queries
+              to improve response times and system performance.
             </li>
             <li>
               Collaborated with a large cross-functional development team to
@@ -49,7 +50,83 @@ export default function Work() {
           </div>
         </div>
 
-        {/* Freelance */}
+        {/* Freelance Software Developer – SellSmart */}
+        <div className="work-card">
+          <div className="work-header">
+            <h3>Freelance Software Developer</h3>
+            <span>SellSmart (Production Web Application)</span>
+          </div>
+
+          <p className="work-meta">
+            February 2025 – Present · Backend / Full-Stack
+          </p>
+
+          <ul className="work-points">
+            <li>
+              Designed and delivered <strong>SellSmart</strong>, a production sales
+              and inventory management system used by multiple small businesses
+              to manage real inventory and daily transactions.
+            </li>
+            <li>
+              Implemented secure backend services using <strong>Spring Boot</strong>{" "}
+              and stateless <strong>JWT authentication</strong> to protect
+              business data.
+            </li>
+            <li>
+              Built inventory, sales, and damaged-goods workflows backed by{" "}
+              <strong>Firebase Firestore</strong>, handling 500+ real inventory
+              and sales transactions per month.
+            </li>
+            <li>
+              Collaborated directly with business owners to translate real-world
+              requirements into backend features and UI flows.
+            </li>
+          </ul>
+
+          <div className="work-actions">
+          <a
+            href="https://www.youtube.com/watch?v=2F_hDw_A4zg"
+            target="_blank"
+            rel="noreferrer"
+            className="work-link"
+          >
+             Demo
+          </a>
+
+          <a
+            href="https://github.com/hrittijab/sellsmart-frontend"
+            target="_blank"
+            rel="noreferrer"
+            className="work-link secondary"
+          >
+            Frontend Code
+          </a>
+
+          <a
+            href="https://github.com/hrittijab/sellsmart-backend"
+            target="_blank"
+            rel="noreferrer"
+            className="work-link secondary"
+          >
+            Backend Code
+          </a>
+        </div>
+
+
+          <div className="work-image">
+            <img src={sellsmart} alt="SellSmart demo screenshot" />
+          </div>
+
+          <div className="work-tech">
+            <span>Java</span>
+            <span>Spring Boot</span>
+            <span>React</span>
+            <span>Firebase Firestore</span>
+            <span>JWT</span>
+          </div>
+        </div>
+
+        {/* Freelance Web Developer */}
         <div className="work-card">
           <div className="work-header">
             <h3>Freelance Web Developer</h3>
